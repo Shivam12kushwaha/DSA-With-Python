@@ -55,7 +55,32 @@ A circular linked list is a data structure where the last node points back to th
 * Deletion Complexity
 * Memory Overhead (for Doubly Circular LL)
 * Not Cache Friendly
-## (3) Queue:
+## (3)  Stack:
+A Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+### Basic Terminologies of Stack:
+* **Top:** The position of the most recently inserted element. Insertions (push) and deletions (pop) are always performed at the top.
+* **Size:** Refers to the current number of elements present in the stack.
+### Types of Stack:
+### (i) Fixed Size Stack:
+* A fixed size stack has a predefined capacity.
+* Once it becomes full, no more elements can be added (this causes overflow).
+* If the stack is empty and we try to remove an element, it causes underflow.
+* Typically implemented using a static array.
+### (ii) Dynamic Size Stack:
+* A dynamic size stack can grow and shrink automatically as needed.
+* If the stack is full, its capacity expands to allow more elements.
+* As elements are removed, memory usage can shrink as well.
+* Can be implemented using:
+  * -> Linked List → grows/shrinks naturally.
+  * -> Dynamic Array (like vector in C++ or ArrayList in Java) → resizes automatically.
+### Common Operations on Stack:
+In order to make manipulations in a stack, there are certain operations provided to us.
+* **push():** to insert an element into the stack.
+* **pop():** to remove an element from the stack.
+* **top():** Returns the top element of the stack.
+* **isEmpty():** returns true if stack is empty else false.
+* **size():** returns the size of the stack.
+## (4) Queue:
 Queue is a linear data structure that follows **FIFO (First In First Out)** Principle, so the first element inserted is the first to be popped out.
 ### Basic Terminologies of Queue:
  * **Front:** Position of the entry in a queue ready to be served, that is, the first entry that will be removed from the queue, is called the front of the queue. It is also referred as the head of the queue.
