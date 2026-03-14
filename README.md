@@ -105,4 +105,18 @@ A queue where each element is assigned a priority, and deletion always happens b
  * **Size:** Returns the number of elements in the queue.
  * **isEmpty:** Returns true if the queue is empty, otherwise false.
  * **isFull:** Returns true if the queue is full, otherwise false.
+### Advantages of Queue:
+* Queues are useful when a particular service is used by multiple consumers.
+* Queues are fast in speed for data inter-process communication.
+* Queues can be used for the implementation of other data structures.
+### Disadvantages of Queue:
+* The operations such as insertion and deletion of elements from the middle are time consuming.
+* In a classical queue, a new element can only be inserted when the existing elements are deleted from the queue.
+* Searching an element takes O(N) time.
+* Maximum size of a queue must be defined prior in case of array implementation.
+## (5) Deque:
+Deque or Double Ended Queue is a generalized version of Queue data structure that allows insert and delete at both ends.
+* Deque can act as both Stack and Queue
+* It is useful in many problems where we need to have a subset of all operations also like insert/remove at front and insert/remove at the end.
+* It is typically implemented either using a doubly linked list or circular array.
 
