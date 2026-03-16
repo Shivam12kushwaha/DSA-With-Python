@@ -119,4 +119,13 @@ Deque or Double Ended Queue is a generalized version of Queue data structure tha
 * Deque can act as both Stack and Queue
 * It is useful in many problems where we need to have a subset of all operations also like insert/remove at front and insert/remove at the end.
 * It is typically implemented either using a doubly linked list or circular array.
-
+## (6) Recursion:
+Recursion is a technique used in computer science to solve big problems by breaking them into smaller, similar problems. The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a **Recursive Function**. Using a recursive algorithm, certain problems can be solved quite easily.
+Recursive function contains two key parts:
+* **Base Case:** The stopping condition that prevents infinite recursion.
+* **Recursive Case:** The part of the function where it calls itself with modified parameters.
+### Steps to Implement Recursion:
+* (i) Define a base case
+* (ii) Define a recursive case
+* (iii) Ensure the recursion termination
+* (iv) Combine the solution
