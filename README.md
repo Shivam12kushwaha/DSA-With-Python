@@ -129,3 +129,22 @@ Recursive function contains two key parts:
 * (ii) Define a recursive case
 * (iii) Ensure the recursion termination
 * (iv) Combine the solution
+
+## (7) Tree:
+Tree Data Structure is a non-linear data structure in which a collection of elements known as nodes are connected to each other via edges such that there exists exactly one path between any two nodes. The topmost node is called the root, and every other node can have one or more child nodes.
+### Basic Terminologies In Tree Data Structure:
+* **Parent Node:** A node that is an immediate predecessor of another node.
+* **Child Node:** A node that is an immediate successor of another node.
+* **Root Node:** The topmost node in a tree, which does not have a parent. 
+* **Leaf Node (External Node):** Nodes that do not have any children.
+* **Ancestor:** Any node on the path from the root to a given node (excluding the node itself).
+* **Descendant:** A node x is a descendant of another node y if y is an ancestor of x. 
+* **Sibling:** Nodes that share the same parent. 
+* **Level of a Node:** The number of edges in the path from the root to that node.The root node is at level 0.
+* **Internal Node:** A node with at least one child.
+* **Neighbor of a Node:** The parent or children of a node.
+* **Subtree:**  A node and all its descendants form a subtree.
+### Why Tree is considered a non-linear data structure?
+Data in a tree is not stored sequentially (i.e., not in a linear order). Instead, it is organized across multiple levels, forming a hierarchical structure. Because of this arrangement, a tree is classified as a non-linear data structure.
+
+
