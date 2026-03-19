@@ -174,3 +174,20 @@ Each node can have at most three children, often labeled as left, middle, and ri
 * **Degree of a node:** The degree of a node is the number of subtrees attached to it (i.e., the number of children it has).
 * A leaf node has a degree of 0.
 * The degree of the tree is the maximum degree among all nodes in the tree.
+
+## (8) Graph:
+Graph is a non-linear data structure like tree data structure. A Graph is composed of a set of **vertices(V)** and a set of **edges(E)**. The vertices are connected with each other through edges.
+* The limitation of tree is, it can only represent hierarchical data. For situations where nodes or vertices are randomly connected with each other other, we use Graph.
+### Representations of Graph:
+Here are the two most common ways to represent a graph-
+* (i) Adjacency Matrix
+* (ii) Adjacency List
+### (i) Adjacency Matrix Representation:
+An adjacency matrix is a way of representing a graph as a boolean matrix of (0's and 1's).
+Let's assume there are n vertices in the graph So, create a 2D matrix adjMat[n][n] having dimension n x n.
+* If there is an edge from vertex i to j, mark adjMat[i][j] as 1. 
+* If there is no edge from vertex i to j, mark adjMat[i][j] as 0.
+### (ii) Adjacency List Representation:
+An array of Lists is used to store edges between two vertices. The size of array is equal to the number of vertices (i.e, n). Each index in this array represents a specific vertex in the graph. The entry at the index i of the array contains a linked list containing the vertices that are adjacent to vertex i. Let's assume there are n vertices in the graph So, create an array of list of size n as adjList[n].
+* adjList[0] will have all the nodes which are connected (neighbour) to vertex 0.
+* adjList[1] will have all the nodes which are connected (neighbour) to vertex 1 and so on.
