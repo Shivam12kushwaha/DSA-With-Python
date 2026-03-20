@@ -191,3 +191,15 @@ Let's assume there are n vertices in the graph So, create a 2D matrix adjMat[n][
 An array of Lists is used to store edges between two vertices. The size of array is equal to the number of vertices (i.e, n). Each index in this array represents a specific vertex in the graph. The entry at the index i of the array contains a linked list containing the vertices that are adjacent to vertex i. Let's assume there are n vertices in the graph So, create an array of list of size n as adjList[n].
 * adjList[0] will have all the nodes which are connected (neighbour) to vertex 0.
 * adjList[1] will have all the nodes which are connected (neighbour) to vertex 1 and so on.
+### Depth First Search:
+Depth First Search (DFS) is a graph traversal method that starts from a source vertex and explores each path completely before backtracking and exploring other paths. To avoid revisiting nodes in graphs with cycles, a visited array is used to track visited vertices.
+
+**Note:** There can be multiple DFS traversals of a graph according to the order in which we pick adjacent vertices.
+**Depth First Search (DFS) starts from a given source vertex and explores one path as deeply as possible. When it reaches a vertex with no unvisited neighbors, it backtracks to the previous vertex to explore other unvisited paths. This continues until all vertices reachable from the source are visited.
+In a graph, there might be loops. So we use an extra visited array to make sure that we do not process a vertex again.**
+
+**Time complexity:** O(V + E), where V is the number of vertices and E is the number of edges in the graph.
+
+**Auxiliary Space:** O(V + E), since an extra visited array of size V is required, And stack size for recursive calls to dfsRec function.
+### DFS of a Disconnected Graph:
+In a disconnected graph, some vertices may not be reachable from a single source. To ensure all vertices are visited in DFS traversal, we iterate through each vertex, and if a vertex is unvisited, we perform a DFS starting from that vertex being the source. This way, DFS explores every connected component of the graph.
