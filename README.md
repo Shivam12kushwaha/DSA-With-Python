@@ -203,3 +203,29 @@ In a graph, there might be loops. So we use an extra visited array to make sure 
 **Auxiliary Space:** O(V + E), since an extra visited array of size V is required, And stack size for recursive calls to dfsRec function.
 ### DFS of a Disconnected Graph:
 In a disconnected graph, some vertices may not be reachable from a single source. To ensure all vertices are visited in DFS traversal, we iterate through each vertex, and if a vertex is unvisited, we perform a DFS starting from that vertex being the source. This way, DFS explores every connected component of the graph.
+### Breadth First Search:
+Breadth First Search (BFS) is a graph traversal algorithm that starts from a source node and explores the graph level by level. First, it visits all nodes directly adjacent to the source. Then, it moves on to visit the adjacent nodes of those nodes, and this process continues until all reachable nodes are visited.
+* BFS is different from DFS in a way that closest vertices are visited before others. We mainly traverse vertices level by level.
+* Popular graph algorithms like **Dijkstra's shortest path, Kahn's Algorithm, and Prim's algorithm** are based on BFS.
+* BFS itself can be used to detect cycle in a directed and undirected graph, find shortest path in an unweighted graph and many more problems.
+
+**The algorithm starts from a given source vertex and explores all vertices reachable from that source, visiting nodes in increasing order of their distance from the source, level by level using a queue. Since graphs may contain cycles, a vertex could be visited multiple times. To prevent revisiting a vertex, a visited array is used.**
+
+**Time Complexity:** O(V + E), BFS explores all the vertices and edges in the graph. It visits every vertex and edge only once.
+
+**Auxiliary Space:** O(V), Using a queue to keep track of the vertices that need to be visited.
+
+**In a disconnected graph, some vertices may not be reachable from a single source. To ensure all vertices are visited in BFS traversal, we iterate through each vertex, and if any vertex is unvisited, we perform a BFS starting from that vertex being the source. This way, BFS explores every connected component of the graph.**
+
+### Applications of BFS in Graphs:
+BFS has various applications in graph theory and computer science, including:
+* Shortest Path Finding
+* Cycle Detection
+* Connected Components
+* Network Routing
+
+
+
+
+
+
