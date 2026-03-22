@@ -224,7 +224,21 @@ BFS has various applications in graph theory and computer science, including:
 * Connected Components
 * Network Routing
 
+## (9) Sorting:
+A Sorting Algorithm is used to rearrange a given array or list of elements in an order.
 
+**Sorting refers to rearrangement of a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.**
+### Types of Sorting Techniques:
+There are various sorting algorithms are used in data structures. The following two types of sorting algorithms can be broadly classified:
+* **Comparison-based:** We compare the elements in a comparison-based sorting algorithm)
+* **Non-comparison-based:** We do not compare the elements in a non-comparison-based sorting algorithm)
+### (i) Bubble Sort:
+It is a simple sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order. It performs multiple passes through the array, and in each pass, the largest unsorted element moves to its correct position at the end.
+After each pass, we ignore the last sorted elements and continue comparing and swapping remaining adjacent pairs. After k passes, the last k elements are sorted.
+
+**Time Complexity:**  O(n^2)  
+**Space Complexity:**  O(1)
+### (ii) Insertion Sort:
 
 
 
