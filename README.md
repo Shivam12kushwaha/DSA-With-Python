@@ -347,6 +347,32 @@ The key process in quickSort is a **partition()**. There are three common algori
 * Data compression algorithms (like Huffman coding preprocessing).
 * Graphics and computational geometry (e.g., convex hull algorithms).
 
+## (vi) Heap Sort:
+**Heap Sort** is a comparison-based sorting algorithm based on the Binary Heap data structure.  
+* It is an optimized version of selection sort.
+* The algorithm repeatedly finds the maximum (or minimum) element and swaps it with the last (or first) element.
+* Using a binary heap allows efficient access to the max (or min) element in O(log n) time instead of O(n).
+* The process is repeated for the remaining elements until the array is sorted.
+* Overall, Heap Sort achieves a time complexity of **O(n log n)**.
+### Heap Sort Algorithm :
+First convert the array into a max heap using heapify, Please note that this happens in-place. The array elements are re-arranged to follow heap properties. Then one by one delete the root node of the Max-heap and replace it with the last node and heapify. Repeat this process while size of heap is greater than 1.  
+**Step 1: Treat the Array as a Complete Binary Tree.**   
+**Step 2: Build a Max Heap.**  
+**Step 3: Sort the array by placing largest element at end of unsorted array.**  
+**Time Complexity:** O(n log n)  
+**Auxiliary Space:** O(log n), due to the recursive call stack. However, auxiliary space can be O(1) for iterative implementation.  
+### Important points about Heap Sort:
+* An in-place algorithm.
+* Its typical implementation is not stable but can be made stable (See this)
+* Typically 2-3 times slower than well-implemented QuickSort. The reason for slowness is a lack of locality of reference.
+### Advantages of Heap Sort:
+* Efficient Time Complexity
+* Minimal Memory Usage
+* Simplicity
+### Disadvantages of Heap Sort:
+* Costly
+* Unstable
+* Inefficient
 
 
 
