@@ -373,6 +373,14 @@ First convert the array into a max heap using heapify, Please note that this hap
 * Costly
 * Unstable
 * Inefficient
+## (vii) Greedy Algorithms:
+Greedy algorithms are a class of algorithms that make locally optimal choices at each step with the hope of finding a global optimum solution.
+* At every step of the algorithm, we make a choice that looks the best at the moment. To make the choice, we sometimes sort the array so that we can always get the next optimal choice quickly. We sometimes also use a priority queue to get the next optimal item.
+* After making a choice, we check for constraints (if there are any) and keep picking until we find the solution.
+### Greedy Choice Property: 
+The optimal solution can be constructed by making the best local choice at each step.
+### Optimal Substructure: 
+The optimal solution to the problem contains the optimal solutions to its sub-problems.
 
 
 
