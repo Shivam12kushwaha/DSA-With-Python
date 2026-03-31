@@ -381,6 +381,10 @@ Greedy algorithms are a class of algorithms that make locally optimal choices at
 The optimal solution can be constructed by making the best local choice at each step.
 ### Optimal Substructure: 
 The optimal solution to the problem contains the optimal solutions to its sub-problems.
+### Characteristics of Greedy Algorithm:
+* Greedy algorithms are simple and easy to implement.
+* They are efficient in terms of time complexity, often providing quick solutions. Greedy Algorithms are typically preferred over Dynamic Programming for the problems where both are applied. For example, Jump Game problem and Single Source Shortest Path Problem (Dijkstra is preferred over Bellman Ford where we do not have negative weights).
+* These algorithms do not reconsider previous choices, as they make decisions based on current information without looking ahead.
   
 
 
