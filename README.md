@@ -385,6 +385,8 @@ The optimal solution to the problem contains the optimal solutions to its sub-pr
 * Greedy algorithms are simple and easy to implement.
 * They are efficient in terms of time complexity, often providing quick solutions. Greedy Algorithms are typically preferred over Dynamic Programming for the problems where both are applied. For example, Jump Game problem and Single Source Shortest Path Problem (Dijkstra is preferred over Bellman Ford where we do not have negative weights).
 * These algorithms do not reconsider previous choices, as they make decisions based on current information without looking ahead.
+### Greedy Algorithms General Structure:
+A **greedy algorithm** solves problems by making the best choice at each step. Instead of looking at all possible solutions, it focuses on the option that seems best right now.
 
 
   
