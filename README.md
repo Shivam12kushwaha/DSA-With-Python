@@ -387,6 +387,9 @@ The optimal solution to the problem contains the optimal solutions to its sub-pr
 * These algorithms do not reconsider previous choices, as they make decisions based on current information without looking ahead.
 ### Greedy Algorithms General Structure:
 A **greedy algorithm** solves problems by making the best choice at each step. Instead of looking at all possible solutions, it focuses on the option that seems best right now.
+Most of the problems where greedy algorithms work follow these two properties:
+* Greedy Choice Property
+* Optimal Substructure
 
 
   
